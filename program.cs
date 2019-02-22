@@ -9,6 +9,7 @@ public class Program
 		Console.WriteLine(" **** Reverse Number **** ");
 		Console.WriteLine("Insert the Number:");
 		num = int.Parse(Console.ReadLine());
+		int input = num;
 		
 		while( num != 0)
 		{
@@ -17,6 +18,6 @@ public class Program
 			sum = sum + r;
 			num /= 10;
 		}
-		Console.WriteLine(sum);
+		Console.WriteLine("The reverse of {0} id {1}",input,sum);
 	}
 }
